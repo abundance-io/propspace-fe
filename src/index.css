@@ -8,3 +8,7 @@ body {
     background-color: #080808;
     color: #d7d7d7;
 }
+
+section {
+    padding-top: 200px;
+}

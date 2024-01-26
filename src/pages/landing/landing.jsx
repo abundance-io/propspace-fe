@@ -1,4 +1,5 @@
 import heroImg from "../../assets/images/hero.svg";
+import downIcon from "../../assets/icons/down.svg";
 import { Button } from "../../components/global/button";
 import { TextHighlighter } from "../../components/global/textHighlighter";
 export const Landing = () => {
@@ -23,7 +24,25 @@ export const Landing = () => {
             </a>
           </div>
         </div>
-        <img src={heroImg} className="h-full" />
+        <img src={heroImg} className="h-full animate-pulse" />
+      </section>
+
+      <a
+        className="item-center flex w-full animate-bounce justify-center"
+        href="#about"
+      >
+        <img src={downIcon} />
+      </a>
+
+      <section className="" id="about">
+        <div className="flex flex-col items-center space-y-5">
+          <span className="bg-mustard rounded-[12px] px-5 py-3 text-sm font-bold text-black">
+            what we do
+          </span>
+          <h2 className="text-center text-6xl font-medium">
+            Revolutionizing Real Estate <br /> Investment for Africans
+          </h2>
+        </div>
       </section>
     </>
   );
