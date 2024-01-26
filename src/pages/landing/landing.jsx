@@ -1,11 +1,9 @@
 import heroImg from "../../assets/images/hero.svg";
 import { Button } from "../../components/global/button";
-import { Nav } from "../../components/global/nav";
 import { TextHighlighter } from "../../components/global/textHighlighter";
 export const Landing = () => {
   return (
     <>
-      <Nav />
       <section className="font-body flex h-screen w-full flex-col items-center bg-black pt-[64px] text-white lg:flex-row">
         <div className="space-y-10 px-24">
           <h1 className="text-9xl font-medium">

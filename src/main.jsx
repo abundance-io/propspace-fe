@@ -7,6 +7,9 @@ import { Landing } from "./pages/landing/landing.jsx";
 import { Dashboard } from "./pages/dashboard/dashboard.jsx";
 import { Error } from "./pages/error/error.jsx";
 import { RouterProvider } from "react-router";
+import { WebsiteLayout } from "./layouts/website/websiteLayout.jsx";
+import { AllBlogs } from "./pages/blog/blog.jsx";
+import { BlogEntry } from "./pages/blog/entry.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,8 +18,21 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        index: true,
-        element: <Landing />,
+        element: <WebsiteLayout />,
+        children: [
+          {
+            index: true,
+            element: <Landing />,
+          },
+          {
+            path: "blog",
+            element: <AllBlogs />,
+          },
+          {
+            path: "blog/:title",
+            element: <BlogEntry />,
+          },
+        ],
       },
       {
         path: "dashboard",
