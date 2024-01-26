@@ -6,6 +6,11 @@ export default {
       fontFamily: {
         body: ["PP Neue Montreal", "sans-serif"],
       },
+      colors: {
+        mustard: "#DFE154",
+        black: "#080808",
+        white: "#D7D7D7",
+      },
     },
   },
   plugins: [],
