@@ -5,7 +5,10 @@ import { TextHighlighter } from "../../components/global/textHighlighter";
 export const Landing = () => {
   return (
     <>
-      <section className="font-body flex h-screen w-full flex-col items-center pt-[64px] lg:flex-row">
+      <section
+        id="home"
+        className="font-body flex h-screen w-full flex-col items-center pt-[64px] lg:flex-row"
+      >
         <div className="space-y-10 px-24">
           <h1 className="text-9xl font-medium">
             Secure <br /> Lifelong <br /> Earnings

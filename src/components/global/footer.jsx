@@ -5,11 +5,20 @@ import logoImg from "../../assets/images/footer.svg";
 import { navLinks } from "./nav";
 import { Button } from "./button";
 import * as Icon from "react-icons/fa6";
+
 export const Footer = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      right: 0,
+      behaviour: "smooth",
+    });
+  };
+
   return (
     <footer
-      className="font-body flex w-full flex-col items-center justify-between gap-10
-      overflow-hidden px-10 pb-10 pt-20 lg:h-screen"
+      className="font-body mt-[200px] flex w-full flex-col items-center justify-between
+      gap-10 overflow-hidden px-10 pb-10 pt-20 lg:h-screen"
     >
       <section className="flex h-[80%] w-full flex-col items-center gap-10 pt-[0px]">
         <div
@@ -65,7 +74,10 @@ export const Footer = () => {
           src={logo}
           className="w-[70%] justify-self-start lg:w-1/2 lg:justify-self-center"
         />
-        <button className="rotate-180 justify-self-end text-white">
+        <button
+          onClick={handleScrollToTop}
+          className="rotate-180 justify-self-end text-white"
+        >
           <img src={arrow} width={"40px"} />
         </button>
       </section>
