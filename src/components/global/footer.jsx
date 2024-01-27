@@ -20,14 +20,14 @@ export const Footer = () => {
       className="font-body mt-[200px] flex w-full flex-col items-center justify-between
       gap-10 overflow-hidden px-10 pb-10 pt-20 lg:h-screen"
     >
-      <section className="flex h-[80%] w-full flex-col items-center gap-10 pt-[0px]">
+      <section className="flex h-[80%] w-full flex-col items-center gap-6 pt-[0px]">
         <div
           style={{
             backgroundImage: `url(${grid})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          className="flex h-1/2 w-full items-center justify-center gap-10 rounded-[20px] border-[1px] border-white p-10 lg:rounded-[40px]"
+          className="flex h-1/2 w-full items-center justify-center gap-6 rounded-[20px] border-[1px] border-white p-10 lg:rounded-[40px]"
         >
           <h2 className="text-xl font-bold lg:text-4xl">
             Become a space <br /> owner today !
@@ -35,7 +35,7 @@ export const Footer = () => {
           <Button text="Join us" />
         </div>
 
-        <div className="flex h-1/2 w-full flex-col gap-10 lg:flex-row">
+        <div className="flex h-1/2 w-full flex-col gap-6 lg:flex-row">
           <div className="bg-mustard flex h-full flex-col items-center justify-center gap-3 rounded-[20px] p-10 text-black lg:w-1/2 lg:rounded-[40px]">
             <h1 className="mb-4 text-6xl font-bold lg:text-8xl">Links</h1>
             <ul className="flex flex-wrap gap-3 lg:gap-10">
