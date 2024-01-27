@@ -3,6 +3,29 @@ import logo from "../../assets/images/logo.svg";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import { useState } from "react";
 
+export const navLinks = [
+  {
+    name: "Home",
+    link: "/#home",
+  },
+  {
+    name: "About",
+    link: "/#about",
+  },
+  {
+    name: "Features",
+    link: "/#features",
+  },
+  {
+    name: "FAQ",
+    link: "/#faq",
+  },
+  {
+    name: "Blog",
+    link: "/blog",
+  },
+];
+
 export const Nav = () => {
   let isMobile = useMediaQuery("(max-width: 768px)");
   const [showMenu, setShowMenu] = useState(false);
@@ -10,29 +33,6 @@ export const Nav = () => {
   const handleShowMenu = () => {
     setShowMenu((prev) => !prev);
   };
-
-  const navLinks = [
-    {
-      name: "Home",
-      link: "/#home",
-    },
-    {
-      name: "About",
-      link: "/#about",
-    },
-    {
-      name: "Features",
-      link: "/#features",
-    },
-    {
-      name: "FAQ",
-      link: "/#faq",
-    },
-    {
-      name: "Blog",
-      link: "/#blog",
-    },
-  ];
 
   const desktopMenu = (
     <nav className="font-body fixed z-[1000] grid w-full grid-cols-3 items-center bg-black px-[32px] py-[24px] text-sm text-white">
