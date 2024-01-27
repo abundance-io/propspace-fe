@@ -81,7 +81,8 @@ export const Landing = () => {
       </section>
 
       <section
-        className="mt-[200px] h-fit w-full space-y-10 px-20 pt-[0px]"
+        id="features"
+        className="mt-[200px] h-fit w-full space-y-20 px-20 pt-[0px]"
         style={{
           backgroundImage: `url(${grid})`,
           backgroundSize: "cover",
