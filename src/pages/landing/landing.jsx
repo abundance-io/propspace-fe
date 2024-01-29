@@ -2,7 +2,7 @@ import heroImg from "../../assets/images/hero.svg";
 import houseImg from "../../assets/images/house.jpg";
 import downIcon from "../../assets/icons/down.svg";
 import grid from "../../assets/images/grid.png";
-import { Button } from "../../components/global/button";
+import { ButtonLink } from "../../components/global/buttonLink";
 import { TextHighlighter } from "../../components/global/textHighlighter";
 import { FeaturesData } from "../../data/feature";
 
@@ -25,7 +25,7 @@ export const Landing = () => {
           </p>
 
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center">
-            <Button text="Get Started" />
+            <ButtonLink text="Get Started" url="register" />
             <a href="#features" className="hover:underline">
               Our Features ↘
             </a>
@@ -78,7 +78,7 @@ export const Landing = () => {
                 Join us in reshaping real estate investment for a more inclusive
                 and prosperous future.
               </p>
-              <Button text="Get Started" />
+              <ButtonLink text="Get Started" url="register" />
             </span>
           </p>
         </div>

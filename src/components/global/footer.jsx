@@ -3,7 +3,7 @@ import arrow from "../../assets/icons/up.svg";
 import grid from "../../assets/images/grid.png";
 import logoImg from "../../assets/images/footer.svg";
 import { navLinks } from "./nav";
-import { Button } from "./button";
+import { ButtonLink } from "./buttonLink";
 import * as Icon from "react-icons/fa6";
 
 export const Footer = () => {
@@ -32,7 +32,7 @@ export const Footer = () => {
           <h2 className="text-xl font-bold lg:text-4xl">
             Become a space <br /> owner today !
           </h2>
-          <Button text="Join us" />
+          <ButtonLink text="Join us" url="register" />
         </div>
 
         <div className="flex h-1/2 w-full flex-col gap-6 lg:flex-row">
