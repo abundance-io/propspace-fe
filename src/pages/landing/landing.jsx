@@ -67,6 +67,7 @@ export const Landing = () => {
             <span className="text-mustard text-6xl">*</span>
             Discover the
             <TextHighlighter>
+              {" "}
               future of real estate on Propspace
             </TextHighlighter>
             , where blockchain turns properties into tradable NFTs. Co-own
