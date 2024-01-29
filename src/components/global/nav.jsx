@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.svg";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import { useState } from "react";
+import { ButtonLink } from "./buttonLink";
 
 export const navLinks = [
   {
@@ -106,18 +107,8 @@ export const Nav = () => {
           </ul>
 
           <span className="space-y-2">
-            <Link
-              to="login"
-              className="hover:bg-mustard flex justify-center rounded-xl bg-white px-[16px] py-3 text-xs font-medium text-black"
-            >
-              Log in
-            </Link>
-            <Link
-              to="register"
-              className="hover:bg-mustard hover:border-mustard flex justify-center rounded-xl border-[1px] border-white px-[16px] py-3 text-xs font-medium text-white hover:text-black"
-            >
-              Create free account
-            </Link>
+            <ButtonLink text="Login" url="login" />
+            <ButtonLink text="Create free account" url="register" />
           </span>
         </div>
       </div>
