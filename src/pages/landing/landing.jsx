@@ -7,6 +7,7 @@ import { TextHighlighter } from "../../components/global/textHighlighter";
 import { FeaturesData } from "../../data/feature";
 import { HowItWorksData } from "../../data/how";
 import { FAQData } from "../../data/faq";
+import icpLogo from "../../assets/images/icpLogo.png";
 
 export const Landing = () => {
   return (
@@ -84,6 +85,31 @@ export const Landing = () => {
             </span>
           </p>
         </div>
+      </section>
+
+      <section className="mt-[200px] flex flex-col-reverse items-center gap-10 p-10 pt-[0px] lg:flex-row lg:p-20">
+        <div className="space-y-5 lg:w-3/5">
+          <h2 className="text-4xl font-medium lg:text-6xl">Built on ICP</h2>
+          <p className="lg:w-[80%]">
+            Propspace is proudly built on the Internet Computer Protocol (ICP)
+            blockchain, ensuring a secure and transparent foundation for our
+            innovative real estate platform. Leveraging ICP, Propspace
+            guarantees decentralized, reliable, and efficient operations,
+            providing users with a cutting-edge experience in the realm of real
+            estate investment.
+          </p>
+        </div>
+        <a
+          href="https://internetcomputer.org/"
+          target="_blank"
+          rel="noreferrer"
+          className="lg:w-2/5"
+        >
+          <img
+            src={icpLogo}
+            className="grayscale transition duration-300 ease-in-out hover:grayscale-0"
+          />
+        </a>
       </section>
 
       <section
