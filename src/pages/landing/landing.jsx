@@ -119,7 +119,7 @@ export const Landing = () => {
       </section>
 
       <section className="mt-[200px] flex flex-col items-center gap-5 p-10 pt-[0px] lg:flex-row lg:p-20">
-        <div className="flex flex-col items-center gap-5 lg:w-2/6">
+        <div className="flex flex-col items-center gap-5 pb-10 lg:w-2/6 lg:pb-[0px]">
           <span className="bg-mustard rounded-[12px] px-5 py-3 text-sm font-bold text-black">
             how it works
           </span>
