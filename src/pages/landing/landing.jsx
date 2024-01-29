@@ -5,6 +5,7 @@ import grid from "../../assets/images/grid.png";
 import { ButtonLink } from "../../components/global/buttonLink";
 import { TextHighlighter } from "../../components/global/textHighlighter";
 import { FeaturesData } from "../../data/feature";
+import { HowItWorksData } from "../../data/how";
 
 export const Landing = () => {
   return (
@@ -112,6 +113,35 @@ export const Landing = () => {
                 </h2>
                 <p className="lg:pr-12">{feature.description}</p>
               </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-[200px] flex flex-col items-center gap-5 p-10 pt-[0px] lg:flex-row lg:p-20">
+        <div className="flex flex-col items-center gap-5 lg:w-2/6">
+          <span className="bg-mustard rounded-[12px] px-5 py-3 text-sm font-bold text-black">
+            how it works
+          </span>
+          <h2 className="text-center text-4xl font-medium lg:text-6xl">
+            Discover <br /> the Magic
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 gap-x-5 md:grid-cols-2 lg:w-4/6 lg:grid-cols-3">
+          {HowItWorksData.map((how) => (
+            <div
+              key={how.id}
+              className="flex flex-col items-center gap-5 border-b-[1px] border-white p-5 lg:min-h-[500px] lg:items-start lg:border-b-[0px] lg:border-l-[1px] lg:p-6"
+            >
+              <h1 className="text-6xl font-bold lg:text-9xl">0{how.id}</h1>
+              <h2 className="text-center text-xl lg:text-left lg:text-2xl">
+                {how.action}
+              </h2>
+              <p>{how.description}</p>
+              {how.cta ? (
+                <ButtonLink text="Get Started" url="register" />
+              ) : null}
             </div>
           ))}
         </div>
