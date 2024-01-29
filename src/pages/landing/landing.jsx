@@ -6,6 +6,7 @@ import { ButtonLink } from "../../components/global/buttonLink";
 import { TextHighlighter } from "../../components/global/textHighlighter";
 import { FeaturesData } from "../../data/feature";
 import { HowItWorksData } from "../../data/how";
+import { FAQData } from "../../data/faq";
 
 export const Landing = () => {
   return (
@@ -118,7 +119,10 @@ export const Landing = () => {
         </div>
       </section>
 
-      <section className="mt-[200px] flex flex-col items-center gap-5 p-10 pt-[0px] lg:flex-row lg:p-20">
+      <section
+        id="how"
+        className="mt-[200px] flex flex-col items-center gap-5 p-10 pt-[0px] lg:flex-row lg:p-20"
+      >
         <div className="flex flex-col items-center gap-5 pb-10 lg:w-2/6 lg:pb-[0px]">
           <span className="bg-mustard rounded-[12px] px-5 py-3 text-sm font-bold text-black">
             how it works
@@ -144,6 +148,27 @@ export const Landing = () => {
               ) : null}
             </div>
           ))}
+        </div>
+      </section>
+
+      <section
+        id="faq"
+        className="flex flex-col items-center gap-5 p-10 pt-[0px] lg:flex-row lg:p-20"
+      >
+        <div className="flex h-full w-full flex-col gap-10 rounded-[40px] bg-white p-10 text-black">
+          <h1 className="text-4xl font-medium lg:text-9xl">FAQ</h1>
+          <div className="grid grid-cols-2 gap-10">
+            {FAQData.map((faq) => (
+              <div
+                key={faq.id}
+                className="rounded-[10px] bg-black p-8 text-white"
+              >
+                <span className="text-mustard text-9xl font-bold">*</span>
+                <h2 className="mb-2 text-2xl font-semibold">{faq.question}</h2>
+                <p>{faq.answer}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>
