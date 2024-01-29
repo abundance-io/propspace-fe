@@ -4,10 +4,10 @@ import { Footer } from "../../components/global/footer";
 
 export const WebsiteLayout = () => {
   return (
-    <>
+    <main>
       <Nav />
       <Outlet />
       <Footer />
-    </>
+    </main>
   );
 };
