@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.svg";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import { useState } from "react";
-import { ButtonLink } from "./buttonLink";
+import { Button } from "@/components/ui/button";
 
 export const navLinks = [
   {
@@ -36,13 +36,13 @@ export const Nav = () => {
   };
 
   const desktopMenu = (
-    <nav className="font-body fixed z-[1000] grid w-full grid-cols-3 items-center bg-black px-[32px] py-[24px] text-sm text-white">
+    <nav className="font-body bg-prop-black text-prop-white fixed z-[1000] grid w-full grid-cols-3 items-center px-[32px] py-[24px] text-sm">
       <img src={logo} alt="logo icon" width={"20px"} />
 
       <ul className="flex items-center gap-8 place-self-center pl-10">
         {navLinks.map((link) => (
           <li key={link.name}>
-            <a href={link.link} className="hover:text-mustard">
+            <a href={link.link} className="hover:text-prop-mustard">
               {link.name}
             </a>
           </li>
@@ -50,24 +50,23 @@ export const Nav = () => {
       </ul>
 
       <div className="space-x-2 justify-self-end">
-        <Link
-          to="login"
-          //zele(scrum mommy btw) was here hhhaahaha, i don't' know how to make a comment lol
-          // this is another comment
-          // gosh i love typing on this keyboard so much
-          // i am actually so accurate with it
-          // and my hands no the positions so well
-          // although i do find myself double tapping some of the keys
-          className="hover:bg-mustard rounded-xl bg-white px-[16px] py-3 text-sm font-semibold text-black hover:text-black"
-        >
-          Log in
-        </Link>
-        <Link
-          to="register"
-          className="hover:bg-mustard hover:border-mustard rounded-xl border-[1px] border-white px-[16px] py-3 text-sm font-semibold text-white hover:text-black"
-        >
-          Create free account
-        </Link>
+        <Button asChild>
+          <Link
+            to="login"
+            //zele(scrum mommy btw) was here hhhaahaha, i don't' know how to make a comment lol
+            // this is another comment
+            // gosh i love typing on this keyboard so much
+            // i am actually so accurate with it
+            // and my hands no the positions so well
+            // although i do find myself double tapping some of the keys
+          >
+            Log in
+          </Link>
+        </Button>
+
+        <Button asChild variant="outline">
+          <Link to="register">Create free account</Link>
+        </Button>
       </div>
     </nav>
   );
@@ -107,8 +106,23 @@ export const Nav = () => {
           </ul>
 
           <span className="space-y-2">
-            <ButtonLink text="Login" url="login" />
-            <ButtonLink text="Create free account" url="register" />
+            <Button asChild size="full">
+              <Link
+                to="login"
+                //zele(scrum mommy btw) was here hhhaahaha, i don't' know how to make a comment lol
+                // this is another comment
+                // gosh i love typing on this keyboard so much
+                // i am actually so accurate with it
+                // and my hands no the positions so well
+                // although i do find myself double tapping some of the keys
+              >
+                Log in
+              </Link>
+            </Button>
+
+            <Button asChild variant="outline" size="full">
+              <Link to="register">Create free account</Link>
+            </Button>
           </span>
         </div>
       </div>

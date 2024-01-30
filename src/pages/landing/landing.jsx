@@ -2,12 +2,13 @@ import heroImg from "../../assets/images/hero.svg";
 import houseImg from "../../assets/images/house.jpg";
 import downIcon from "../../assets/icons/down.svg";
 import grid from "../../assets/images/grid.png";
-import { ButtonLink } from "../../components/global/buttonLink";
 import { TextHighlighter } from "../../components/global/textHighlighter";
 import { FeaturesData } from "../../data/feature";
 import { HowItWorksData } from "../../data/how";
 import { FAQData } from "../../data/faq";
 import icpLogo from "../../assets/images/icpLogo.png";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export const Landing = () => {
   return (
@@ -28,7 +29,9 @@ export const Landing = () => {
           </p>
 
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center">
-            <ButtonLink text="Get Started" url="register" />
+            <Button asChild>
+              <Link to="register">Get Started</Link>
+            </Button>
             <a href="#features" className="hover:underline">
               Our Features ↘
             </a>
@@ -81,7 +84,9 @@ export const Landing = () => {
                 Join us in reshaping real estate investment for a more inclusive
                 and prosperous future.
               </p>
-              <ButtonLink text="Get Started" url="register" />
+              <Button asChild>
+                <Link to="register">Get Started</Link>
+              </Button>
             </span>
           </p>
         </div>
@@ -170,7 +175,9 @@ export const Landing = () => {
               </h2>
               <p>{how.description}</p>
               {how.cta ? (
-                <ButtonLink text="Get Started" url="register" />
+                <Button asChild>
+                  <Link to="register">Get Started</Link>
+                </Button>
               ) : null}
             </div>
           ))}
