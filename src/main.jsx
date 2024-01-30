@@ -10,6 +10,10 @@ import { RouterProvider } from "react-router";
 import { WebsiteLayout } from "./layouts/website/websiteLayout.jsx";
 import { AllBlogs } from "./pages/blog/blog.jsx";
 import { BlogEntry } from "./pages/blog/entry.jsx";
+import { Login } from "./pages/auth/login.jsx";
+import { Register } from "./pages/auth/register.jsx";
+import { AppLayout } from "./layouts/app/app.jsx";
+import { AuthLayout } from "./layouts/app/auth/auth.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,8 +39,29 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "dashboard",
-        element: <Dashboard />,
+        path: "app",
+        element: <AppLayout />,
+        children: [
+          {
+            index: true,
+            path: "dashboard",
+            element: <Dashboard />,
+          },
+        ],
+      },
+      {
+        path: "/",
+        element: <AuthLayout />,
+        children: [
+          {
+            path: "login",
+            element: <Login />,
+          },
+          {
+            path: "register",
+            element: <Register />,
+          },
+        ],
       },
     ],
   },

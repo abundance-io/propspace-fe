@@ -49,7 +49,7 @@ export const Landing = () => {
 
       <section className="flex flex-col gap-10 p-10 lg:p-20" id="about">
         <div className="flex flex-col items-center space-y-5">
-          <span className="bg-mustard rounded-[12px] px-5 py-3 text-sm font-bold text-black">
+          <span className="bg-prop-mustard rounded-[12px] px-5 py-3 text-sm font-bold text-black">
             what we do
           </span>
           <h2 className="text-center text-4xl font-medium lg:text-6xl">
@@ -67,7 +67,7 @@ export const Landing = () => {
             className="h-[200px] w-full rounded-[40px] lg:h-[500px] lg:w-1/2"
           ></div>
           <p className="text-base lg:w-1/2 lg:text-xl">
-            <span className="text-mustard text-6xl">*</span>
+            <span className="text-prop-mustard text-6xl">*</span>
             Discover the
             <TextHighlighter>
               {" "}
@@ -128,7 +128,7 @@ export const Landing = () => {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           {FeaturesData.map((feature) => (
             <div
-              className={`${feature.primary ? "bg-mustard" : "bg-white"} flex flex-col items-center gap-10 rounded-[25px] p-6 text-black lg:flex-row lg:p-10`}
+              className={`${feature.primary ? "bg-prop-mustard" : "bg-prop-white"} flex flex-col items-center gap-10 rounded-[25px] p-6 text-black lg:flex-row lg:p-10`}
               key={feature.id}
             >
               <span className="h-fit w-fit rounded-full bg-black p-4 text-2xl font-bold text-white lg:text-4xl">
@@ -181,15 +181,15 @@ export const Landing = () => {
         id="faq"
         className="flex flex-col items-center gap-5 p-10 pt-[0px] lg:flex-row lg:p-20"
       >
-        <div className="flex h-full w-full flex-col gap-10 rounded-[40px] bg-white p-10 text-black">
+        <div className="bg-prop-white flex h-full w-full flex-col gap-10 rounded-[40px] p-10 text-black">
           <h1 className="text-4xl font-medium lg:text-9xl">FAQ</h1>
           <div className="grid grid-cols-2 gap-10">
             {FAQData.map((faq) => (
               <div
                 key={faq.id}
-                className="rounded-[10px] bg-black p-8 text-white"
+                className="text-prop-white rounded-[10px] bg-black p-8"
               >
-                <span className="text-mustard text-9xl font-bold">*</span>
+                <span className="text-prop-mustard text-9xl font-bold">*</span>
                 <h2 className="mb-2 text-2xl font-semibold">{faq.question}</h2>
                 <p>{faq.answer}</p>
               </div>
