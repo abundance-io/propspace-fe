@@ -20,7 +20,7 @@
         --secondary-foreground: 24 9.8% 10%;
 
         --muted: 60 4.8% 95.9%;
-        --muted-foreground: 25 5.3% 44.7%;
+        --muted-foreground: 0 0% 27%;
 
         --accent: 61 70% 61%;
         --accent-foreground: 0 0% 3%;
@@ -43,8 +43,8 @@
         --background: 0 0% 3%;
         --foreground: 0 0% 84%;
 
-        --card: 20 14.3% 4.1%;
-        --card-foreground: 60 9.1% 97.8%;
+        --card: 0 0% 3%;
+        --card-foreground: 0 0% 84%;
 
         --popover: 20 14.3% 4.1%;
         --popover-foreground: 60 9.1% 97.8%;

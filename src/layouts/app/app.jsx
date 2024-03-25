@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 export const AppLayout = () => {
   return (
     <ThemeProvider>
-      <main>
+      <main className="bg-background flex h-screen flex-row gap-2">
         <Header />
         <Outlet />
       </main>
