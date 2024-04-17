@@ -7,10 +7,11 @@ import {
 } from "@/components/ui/card";
 import { Profit } from "./components/profit";
 import { Spaces } from "./components/spaces";
+import * as Icon from "lucide-react";
 
 export const Dashboard = () => {
   return (
-    <section className="bg-background text-foreground flex h-full w-full flex-col gap-5 px-10 py-6">
+    <section className="bg-background text-foreground flex h-full w-full flex-col gap-5 px-10 py-6 overflow-y-scroll">
       <div className="flex flex-col items-start gap-2">
         <p className="text-muted-foreground text-base">
           Hi, here are your daily stats
@@ -30,15 +31,25 @@ export const Dashboard = () => {
         <div className="col-span-3 grid gap-5">
           <Card>
             <CardHeader>
-              <CardTitle>Total Income</CardTitle>
+              <CardTitle>Investment</CardTitle>
             </CardHeader>
-            <CardContent></CardContent>
+            <CardContent>
+              <div className="flex space-x-1">
+                <p className="text-xl text-muted-foreground">₦</p>
+                <p className="text-3xl">110k</p>
+              </div>
+            </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Total Income</CardTitle>
+              <CardTitle>Total Profit</CardTitle>
             </CardHeader>
-            <CardContent></CardContent>
+            <CardContent>
+              <div className="flex space-x-1">
+                <p className="text-xl text-muted-foreground">₦</p>
+                <p className="text-3xl">49k</p>
+              </div>
+            </CardContent>
           </Card>
         </div>
         <Card className="col-span-3 lg:col-span-2">

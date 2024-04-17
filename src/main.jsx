@@ -14,6 +14,7 @@ import { Login } from "./pages/auth/login.jsx";
 import { Register } from "./pages/auth/register.jsx";
 import { AppLayout } from "./layouts/app/app.jsx";
 import { AuthLayout } from "./layouts/app/auth/auth.jsx";
+import { Spaces } from "./pages/spaces/spaces.jsx";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,12 @@ const router = createBrowserRouter([
             path: "dashboard",
             element: <Dashboard />,
           },
+
+          {
+            index: true,
+            path: "spaces",
+            element: <Spaces />,
+          },
         ],
       },
       {
@@ -70,5 +77,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </React.StrictMode>
 );

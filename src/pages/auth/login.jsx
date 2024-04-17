@@ -55,9 +55,11 @@ export const Login = () => {
             </Link>
           </span>
           <div className="flex w-full">
-            <Button variant="default" size="full">
-              Log in
-            </Button>
+            <Link to="/app/dashboard" className="w-full">
+              <Button variant="default" size="full">
+                Log in
+              </Button>
+            </Link>
           </div>
           <span className="flex w-full justify-center">
             <Link
