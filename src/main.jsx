@@ -15,6 +15,8 @@ import { Register } from "./pages/auth/register.jsx";
 import { AppLayout } from "./layouts/app/app.jsx";
 import { AuthLayout } from "./layouts/app/auth/auth.jsx";
 import { Spaces } from "./pages/spaces/spaces.jsx";
+import { Settings } from "./pages/settings/settings.jsx";
+import { Actions } from "./pages/actions/actions.jsx";
 
 const router = createBrowserRouter([
   {
@@ -49,9 +51,16 @@ const router = createBrowserRouter([
             element: <Dashboard />,
           },
           {
-            index: true,
             path: "spaces",
             element: <Spaces />,
+          },
+          {
+            path: "settings",
+            element: <Settings />,
+          },
+          {
+            path: "actions",
+            element: <Actions />,
           },
         ],
       },
