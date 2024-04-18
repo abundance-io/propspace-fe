@@ -17,7 +17,7 @@ import { AuthLayout } from "./layouts/app/auth/auth.jsx";
 import { Spaces } from "./pages/spaces/spaces.jsx";
 import { Settings } from "./pages/settings/settings.jsx";
 import { Actions } from "./pages/actions/actions.jsx";
-
+import { SpacesPersonal } from "./pages/spaces/myspace.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
