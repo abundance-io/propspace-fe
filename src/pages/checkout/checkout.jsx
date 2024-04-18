@@ -1,12 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import image from "../../assets/images/house.jpg";
 export const CheckOut = () => {
   let images = [
     "https://images.nigeriapropertycentre.com/properties/images/2093677/0661c0b0a06c4f-luxury-2-bedrooms-maisonette-apartment-for-sale-lekki-phase-1-lekki-lagos.jpg",
@@ -22,20 +16,17 @@ export const CheckOut = () => {
         <p className="text-muted-foreground text-base">Freedom way Lekki</p>
         <div>
           {/* <div className="grid grid-cols-2 gap-2 cursor-pointer w-[60%]"> */}
-          {/* <Carousel>
-            <CarouselContent>
-              <CarouselItem>
-                <img
-                  key={index}
-                  src={image}
-                  width={"400px"}
-                  className="rounded-md"
-                />
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel> */}
+
+          <div className="flex flex-row items-center gap-5 overflow-y-scroll">
+            {images.map((_, index) => {
+              <img
+                key={index}
+                src={image}
+                width={"400px"}
+                className="rounded-md"
+              />;
+            })}
+          </div>
           {/* </div> */}
           <div>
             <div className="my-10 flex flex-col space-y-5">

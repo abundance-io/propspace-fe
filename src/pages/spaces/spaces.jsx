@@ -10,47 +10,47 @@ const spaces = [
       "https://images.nigeriapropertycentre.com/properties/images/820700/05ff3e52ef3781-luxury-2-bedroom-flats-in-high-rise-building-block-of-flats-for-sale-lekki-phase-1-lekki-lagos.jpeg",
   },
   {
-    name: "High Rise Apartment Building",
+    name: "3 Bedroom Duplex",
     num_units: 179,
-    location: "Lekki Freedom Way",
+    location: "gwarinpa",
     price_per_unit: "10k",
     imgurl:
       "https://cdn.punchng.com/wp-content/uploads/2022/02/27232405/housing-estate-Octo5-Holdings.jpg ",
   },
   {
-    name: "High Rise Apartment Building",
+    name: "Duplex Room Apartments",
     num_units: 11,
-    location: "Lekki Freedom Way",
+    location: "FESTAC",
     price_per_unit: "8k",
     imgurl:
       "https://i.pinimg.com/736x/aa/05/9c/aa059c230652d65ddb853a87d13a13da.jpg",
   },
   {
-    name: "High Rise Apartment Building",
+    name: "Estate Apartments",
     num_units: 10,
-    location: "Lekki Freedom Way",
+    location: "Arepo",
     price_per_unit: "14k",
     imgurl:
       "https://images.ctfassets.net/abyiu1tn7a0f/3vTBvQw6GEDHsymU7JL0HB/db64167a9e8e62d3c3577632a99eb394/fully-detached-apartments-for-sale-vgc.jpg",
   },
   {
-    name: "High Rise Apartment Building",
+    name: "4 Bedroom Duplex",
     num_units: 1,
-    location: "Lekki Freedom Way",
+    location: "Ketu",
     price_per_unit: "12k",
     imgurl:
       "https://cdn.punchng.com/wp-content/uploads/2016/08/15111830/Estate.jpg",
   },
   {
-    name: "High Rise Apartment Building",
+    name: "Apartment Building",
     num_units: 8,
-    location: "Lekki Freedom Way",
+    location: "Ota Ogun",
     price_per_unit: "11k",
     imgurl:
       "https://landsofnigeria.com/wp-content/uploads/2021/02/livingold7-estate.jpg",
   },
   {
-    name: "High Rise Apartment Building",
+    name: "Semi-Detached Apartment Building",
     num_units: 100,
     location: "Lekki Freedom Way",
     price_per_unit: "13k",
@@ -58,9 +58,9 @@ const spaces = [
       "https://ikejarecord.com/wp-content/uploads/2023/12/Photo-Template-743-%C3%97-495-px-24.jpg",
   },
   {
-    name: "High Rise Apartment Building",
+    name: "Apartment Building",
     num_units: 10,
-    location: "Lekki Freedom Way",
+    location: "Aja Lekki",
     price_per_unit: "9k",
     imgurl:
       "https://amenestate.com/wp-content/uploads/2021/09/1_RaZjSu5ut0m9o2DgVDZTAw.jpeg",
@@ -74,9 +74,9 @@ const spaces = [
       "https://cdn.vanguardngr.com/wp-content/uploads/2018/08/housing-089.jpg",
   },
   {
-    name: "High Rise Apartment Building",
+    name: "Hill Rise Estate Buildings",
     num_units: 2,
-    location: "Lekki Freedom Way",
+    location: "Berger Ojota",
     price_per_unit: "17k",
     imgurl:
       "https://amenestate.com/wp-content/uploads/2021/09/1_RaZjSu5ut0m9o2DgVDZTAw.jpeg",

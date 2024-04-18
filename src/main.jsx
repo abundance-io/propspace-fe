@@ -18,6 +18,7 @@ import { Spaces } from "./pages/spaces/spaces.jsx";
 import { Settings } from "./pages/settings/settings.jsx";
 import { Actions } from "./pages/actions/actions.jsx";
 import { SpacesPersonal } from "./pages/spaces/myspace.jsx";
+import { CheckOut } from "./pages/checkout/checkout.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -53,6 +54,11 @@ const router = createBrowserRouter([
           {
             path: "spaces",
             element: <Spaces />,
+          },
+
+          {
+            path: "spaces/:id",
+            element: <CheckOut />,
           },
           {
             path: "settings",
