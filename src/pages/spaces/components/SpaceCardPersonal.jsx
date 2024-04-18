@@ -21,7 +21,7 @@ export const SpaceCard = (props) => {
         <CardHeader className="py-5">
           <div className="flex space-x-2">
             <Icon.HomeIcon />
-            <p className=" font-bold">{props.data.num_units} units available</p>
+            <p className=" font-bold">{props.data.num_units} units owned</p>
           </div>
         </CardHeader>
         <CardContent className="space-y-5">
