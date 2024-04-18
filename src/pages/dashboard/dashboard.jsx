@@ -8,6 +8,8 @@ import {
 import { Profit } from "./components/profit";
 import { Spaces } from "./components/spaces";
 import * as Icon from "lucide-react";
+import profit from "../../assets/images/profit.svg";
+import investment from "../../assets/images/investment.svg";
 
 export const Dashboard = () => {
   return (
@@ -28,15 +30,18 @@ export const Dashboard = () => {
             <Profit />
           </CardContent>
         </Card>
-        <div className="col-span-3 grid gap-5">
+        <div className="col-span-4 md:col-span-3 grid grid-cols-2 gap-5">
           <Card>
             <CardHeader>
-              <CardTitle>Investment</CardTitle>
+              <CardTitle>Total Investment</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex flex-col gap-10">
               <div className="flex space-x-1">
                 <p className="text-xl text-muted-foreground">₦</p>
                 <p className="text-3xl">110k</p>
+              </div>
+              <div>
+                <img src={investment} className="w-full" />
               </div>
             </CardContent>
           </Card>
@@ -44,10 +49,13 @@ export const Dashboard = () => {
             <CardHeader>
               <CardTitle>Total Profit</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex flex-col gap-10">
               <div className="flex space-x-1">
                 <p className="text-xl text-muted-foreground">₦</p>
                 <p className="text-3xl">49k</p>
+              </div>
+              <div>
+                <img src={profit} className="w-full" />
               </div>
             </CardContent>
           </Card>
@@ -63,15 +71,22 @@ export const Dashboard = () => {
         <Card className="col-span-3">
           <CardHeader>
             <CardTitle>Recent Payments</CardTitle>
-            <CardDescription>You made 265 sales this month.</CardDescription>
+            <CardDescription>A brief overview of recent investment payments from your spaces.</CardDescription>
           </CardHeader>
-          <CardContent></CardContent>
+          <CardContent className="text-center flex flex-col items-center gap-3 justify-center w-full h-2/3">
+            <Icon.Receipt className="text-muted-foreground w-[40px]" />
+            <p className="w-[50%] text-muted-foreground">You've recieved no payments this month</p>
+          </CardContent>
         </Card>
         <Card className="col-span-2">
           <CardHeader>
             <CardTitle>Pending Actions</CardTitle>
+            <CardDescription>A brief overview of actions in your spaces.</CardDescription>
           </CardHeader>
-          <CardContent></CardContent>
+          <CardContent className="text-center flex flex-col items-center gap-3 justify-center w-full h-2/3">
+            <Icon.AlertCircle className="text-muted-foreground w-[40px]" />
+            <p className="w-[50%] text-muted-foreground">You've no current actions</p>
+          </CardContent>
         </Card>
       </div>
     </section>
