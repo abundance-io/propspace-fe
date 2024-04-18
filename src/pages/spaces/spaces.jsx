@@ -2,7 +2,8 @@ import { SpaceCard } from "./components/SpaceCard";
 
 const spaces = [
   {
-    name: "High Rise Apartment Building Lekki Freedom Way",
+    name: "High Rise Apartment Building ",
+    location: "Lekki Freedom Way",
     num_units: 800,
     price_per_unit: "15k",
     imgurl:

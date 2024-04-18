@@ -27,8 +27,10 @@ export const SpaceCard = (props) => {
             />
           </div>
           <div className="flex flex-col space-y-1 mt-1">
-            <p className="w-full  mx-1 font-bold">High Rise Apartment</p>
-            <p className="w-full mx-1 text-xs font-bold">Freedom way lekki</p>
+            <p className="w-full  mx-1 font-bold">{props.data.name}</p>
+            <p className="w-full mx-1 text-xs font-bold">
+              {props.data.location}
+            </p>
 
             <div className="flex space-x-1">
               <p className="text-xs text-muted-foreground">₦</p>
