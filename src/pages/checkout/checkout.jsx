@@ -22,7 +22,7 @@ export const CheckOut = () => {
         <p className="text-muted-foreground text-base">Freedom way Lekki</p>
         <div>
           {/* <div className="grid grid-cols-2 gap-2 cursor-pointer w-[60%]"> */}
-          <Carousel>
+          {/* <Carousel>
             <CarouselContent>
               <CarouselItem>
                 <img
@@ -35,7 +35,7 @@ export const CheckOut = () => {
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
-          </Carousel>
+          </Carousel> */}
           {/* </div> */}
           <div>
             <div className="my-10 flex flex-col space-y-5">
