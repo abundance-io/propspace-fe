@@ -62,6 +62,12 @@ const router = createBrowserRouter([
             path: "spaces/:id",
             element: <CheckOut />,
           },
+
+          {
+            index: true,
+            path: "myspaces",
+            element: <SpacesPersonal />,
+          },
         ],
       },
       {

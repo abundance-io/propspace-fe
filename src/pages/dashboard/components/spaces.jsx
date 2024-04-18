@@ -38,7 +38,7 @@ export const Spaces = () => {
       </div>
 
       <Link
-        to="spaces"
+        to="/myspaces"
         className="border-muted hover:bg-muted text-muted-foreground flex items-center justify-center rounded-[5px] border-t-[1px] p-2"
       >
         View all spaces
