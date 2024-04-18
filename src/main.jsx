@@ -15,6 +15,7 @@ import { Register } from "./pages/auth/register.jsx";
 import { AppLayout } from "./layouts/app/app.jsx";
 import { AuthLayout } from "./layouts/app/auth/auth.jsx";
 import { Spaces } from "./pages/spaces/spaces.jsx";
+import { CheckOut } from "./pages/checkout/checkout.jsx";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,12 @@ const router = createBrowserRouter([
             index: true,
             path: "spaces",
             element: <Spaces />,
+          },
+
+          {
+            index: true,
+            path: "spaces/:id",
+            element: <CheckOut />,
           },
         ],
       },
