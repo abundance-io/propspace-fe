@@ -10,8 +10,8 @@ export const Spaces = () => {
           <AvatarFallback>OM</AvatarFallback>
         </Avatar>
         <div>
-          <p className="text-sm font-medium leading-none">Sofia Davis</p>
-          <p className="text-muted-foreground text-sm">m@example.com</p>
+          <p className="text-sm font-medium leading-none">High Rise Apartment Building</p>
+          <p className="text-muted-foreground text-sm">Lekki Freedom Way</p>
         </div>
       </div>
 
@@ -21,8 +21,8 @@ export const Spaces = () => {
           <AvatarFallback>OM</AvatarFallback>
         </Avatar>
         <div>
-          <p className="text-sm font-medium leading-none">Sofia Davis</p>
-          <p className="text-muted-foreground text-sm">m@example.com</p>
+          <p className="text-sm font-medium leading-none">Two Bedroom Flat</p>
+          <p className="text-muted-foreground text-sm">Lekki Freedom Way</p>
         </div>
       </div>
 
@@ -32,8 +32,8 @@ export const Spaces = () => {
           <AvatarFallback>OM</AvatarFallback>
         </Avatar>
         <div>
-          <p className="text-sm font-medium leading-none">Sofia Davis</p>
-          <p className="text-muted-foreground text-sm">m@example.com</p>
+          <p className="text-sm font-medium leading-none">Three Bedroom Bungalow</p>
+          <p className="text-muted-foreground text-sm">Lekki Freedom Way</p>
         </div>
       </div>
 

@@ -14,7 +14,7 @@ export const navLinks = [
   {
     name: "Actions",
     icon: <Icon.CableIcon />,
-    url: "Actions",
+    url: "actions",
   },
   {
     name: "Spaces",
