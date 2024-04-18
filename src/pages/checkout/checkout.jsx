@@ -1,5 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 export const CheckOut = () => {
   let images = [
     "https://images.nigeriapropertycentre.com/properties/images/2093677/0661c0b0a06c4f-luxury-2-bedrooms-maisonette-apartment-for-sale-lekki-phase-1-lekki-lagos.jpg",
@@ -14,18 +21,22 @@ export const CheckOut = () => {
         <h1 className="text-3xl font-bold ">High Rise Aparment Building</h1>
         <p className="text-muted-foreground text-base">Freedom way Lekki</p>
         <div>
-          <div className="grid grid-cols-2 gap-2 cursor-pointer w-[60%]">
-            {images.map((image, index) => {
-              return (
+          {/* <div className="grid grid-cols-2 gap-2 cursor-pointer w-[60%]"> */}
+          <Carousel>
+            <CarouselContent>
+              <CarouselItem>
                 <img
                   key={index}
                   src={image}
                   width={"400px"}
                   className="rounded-md"
                 />
-              );
-            })}
-          </div>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+          {/* </div> */}
           <div>
             <div className="my-10 flex flex-col space-y-5">
               <p className="font-bold">Property Price</p>

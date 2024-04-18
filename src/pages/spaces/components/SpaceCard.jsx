@@ -6,11 +6,18 @@ import {
 } from "@/components/ui/card";
 import image from "../../../assets/images/house.jpg";
 import * as Icon from "lucide-react";
+import { useNavigate } from "react-router";
 
 export const SpaceCard = (props) => {
+  const navigate = useNavigate();
   return (
     <div className="text-white w-90%">
-      <Card className="cursor-pointer">
+      <Card
+        className="cursor-pointer"
+        onClick={() => {
+          navigate("/app/spaces/21");
+        }}
+      >
         <CardHeader className="py-5">
           <div className="flex space-x-2">
             <Icon.HomeIcon />
@@ -33,10 +40,8 @@ export const SpaceCard = (props) => {
               backgroundRepeat: "no-repeat",
               filter: "grayscale(100%)",
             }}
-
             className="h-[200px] w-full rounded-md"
-          >
-          </div>
+          ></div>
           <div className="flex flex-col space-y-1 mt-1">
             <p className="w-full mx-1 font-bold">{props.data.name}</p>
             <p className="w-full mx-1 text-xs font-italic flex items-center gap-2">
